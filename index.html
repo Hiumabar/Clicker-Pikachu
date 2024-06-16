@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Pikachu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Clicker Pikachu</h1>
+        <div id="username-container">
+            <input type="text" id="username" placeholder="Enter your username">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div id="score-container" class="hidden">
+            <h2>Points: <span id="score">0</span></h2>
+        </div>
+        <img src="download.jpeg" id="click-image" onclick="incrementScore()" alt="Pokemon Image" class="hidden">
+        <div id="upgrades-container" class="hidden">
+            <h2>Upgrades</h2>
+            <button onclick="buyUpgrade(1)" id="upgrade-1">Upgrade 1 (Cost: 10, +1 per click)</button>
+            <button onclick="buyUpgrade(2)" id="upgrade-2">Upgrade 2 (Cost: 100, +10 per click)</button>
+        </div>
+        <div id="highscore-container">
+            <h2>High Score</h2>
+            <ul id="highscore"></ul>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
