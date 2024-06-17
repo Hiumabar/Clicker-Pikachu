@@ -40,8 +40,20 @@ button:hover {
     background-color: #0056b3;
 }
 
-#upgrades-container, #highscore-container {
+#score-highscore-container {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
+}
+
+#upgrades-container {
+    margin-top: 20px;
+}
+
+.upgrade-button {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
 }
 
 #click-image {
@@ -76,14 +88,4 @@ input[type="text"] {
 h2 {
     margin: 10px 0;
     color: #007BFF;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    padding: 5px 0;
-    font-size: 1.1em;
 }
