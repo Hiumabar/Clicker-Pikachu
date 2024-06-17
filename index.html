@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clicker Pikachu</title>
+    <title>Clicker Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="game-container">
-        <h1>Clicker Pikachu</h1>
+        <h1>Clicker Game</h1>
         <div id="username-container">
             <input type="text" id="username" placeholder="Enter your username">
             <button onclick="startGame()">Start Game</button>
         </div>
-        <div id="score-container" class="hidden">
+        <div id="score-highscore-container" class="hidden">
             <h2>Points: <span id="score">0</span></h2>
+            <h2>High Score: <span id="highscore">0</span></h2>
         </div>
         <img src="download.jpeg" id="click-image" onclick="incrementScore()" alt="Pokemon Image" class="hidden">
+        <audio id="pikachu-sound" src="pikachu.mp3"></audio>
         <div id="upgrades-container" class="hidden">
             <h2>Upgrades</h2>
-            <button onclick="buyUpgrade(1)" id="upgrade-1">Upgrade 1 (Cost: 10, +1 per click)</button>
-            <button onclick="buyUpgrade(2)" id="upgrade-2">Upgrade 2 (Cost: 100, +10 per click)</button>
-        </div>
-        <div id="highscore-container">
-            <h2>High Score</h2>
-            <ul id="highscore"></ul>
+            <button onclick="buyUpgrade(1)" id="upgrade-1" class="upgrade-button">Upgrade 1 (Cost: 10, +1 per click)</button>
+            <button onclick="buyUpgrade(2)" id="upgrade-2" class="upgrade-button">Upgrade 2 (Cost: 100, +10 per click)</button>
+            <button onclick="buyUpgrade(3)" id="upgrade-3" class="upgrade-button">Upgrade 3 (Cost: 500, +50 per click)</button>
+            <button onclick="buyUpgrade(4)" id="upgrade-4" class="upgrade-button">Upgrade 4 (Cost: 1000, +100 per click)</button>
+            <button onclick="buyUpgrade(5)" id="upgrade-5" class="upgrade-button">Upgrade 5 (Cost: 5000, +500 per click)</button>
         </div>
         <div id="message"></div>
     </div>
